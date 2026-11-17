@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "autoenchantingskill",
+  "version": "${version}",
+  "name": "AutoEnchantingSkill",
+  "description": "Enchant otomatis berulang: meja enchant -> cek hasil -> grindstone -> ulangi. Lengkap dengan GUI pengaturan.",
+  "authors": ["AutoEnchantingSkill"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.autoenchantingskill.AutoEnchantingSkillClient"] },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
