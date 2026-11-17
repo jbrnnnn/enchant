@@ -441,7 +441,7 @@ public final class AutoEnchanter {
     }
 
     private static void play(MinecraftClient mc, SoundEvent ev, float pitch) {
-        if (!AesConfig.get().sound) return;
-        mc.getSoundManager().play(PositionedSoundInstance.master(ev, pitch));
+        if (!AesConfig.get().sound || mc.player == null) return;
+        mc.player.playSound(ev, 1.0f, pitch);
     }
 }
